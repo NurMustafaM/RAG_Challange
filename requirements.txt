@@ -1,0 +1,10 @@
+flask
+pdfminer.six
+nltk
+spacy
+langchain
+langchain-chroma
+langchain-huggingface
+sentence-transformers
+requests
+chromadb

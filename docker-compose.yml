@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  rag_challenge:
+    build: .
+    container_name: rag_challenge
+    volumes:
+      - .:/app
+    ports:
+      - "5000:5000"
+    environment:
+      - PERSIST_DIRECTORY=/app/chroma_store
+    command: python app.py
+  chromadb_service:
+    image: chromadb/chromadb
+    ports:
+      - "8000:8000"
