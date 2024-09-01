@@ -1,4 +1,3 @@
-# RAG_Challange
 
 # RAG Challenge
 
